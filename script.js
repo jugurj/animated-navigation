@@ -8,6 +8,7 @@ const nav5 = document.getElementById('nav-5');
 const navItems = [nav1, nav2, nav3, nav4, nav5];
 
 function toggleNav() {
+    
     // Toggle: Menu Bars Open / Closed
     menuBars.classList.toggle('change');
 
@@ -20,7 +21,6 @@ function toggleNav() {
 
         // Animate in nav items
         navItems.map((item, key) => item.classList.replace(`slide-out-${key + 1}`, `slide-in-${key + 1}`));
-
     } else {
         // Animate Out - Overlay
         overlay.classList.replace('overlay-slide-right', 'overlay-slide-left');
